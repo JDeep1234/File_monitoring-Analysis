@@ -1,4 +1,4 @@
-# Network Anomaly Detection Application file monitoring
+# Network Anomaly Detection Application for file monitoring
 
 ## Overview
 
