@@ -11,18 +11,18 @@ The Network Anomaly Detection Application is a simple Python application that pr
 - Dark color palette for a cyber security theme.
 - Logs all file system events in a dedicated QTextEdit.
 - Modules Used:
-   os: Provides a portable way to use operating system-dependent functionality.
-   sys: Provides access to some variables used or maintained by the Python interpreter.
-   time: Provides various time-related functions.
-   watchdog: A Python library that monitors file system events.
-   PyQt5: A set of Python bindings for Qt application framework.
-   datetime: Provides classes for manipulating dates and times.
+   -os: Provides a portable way to use operating system-dependent functionality.
+   -sys: Provides access to some variables used or maintained by the Python interpreter.
+   -time: Provides various time-related functions.
+   -watchdog: A Python library that monitors file system events.
+   -PyQt5: A set of Python bindings for Qt application framework.
+   -datetime: Provides classes for manipulating dates and times.
 - Classes:
-FileAccessHandler: Subclass of FileSystemEventHandler that overrides methods for handling file system events such as file modifications, creations, and deletions. It emits a signal whenever an event occurs.
+-FileAccessHandler: Subclass of FileSystemEventHandler that overrides methods for handling file system events such as file modifications, creations, and deletions. It emits a signal whenever an event occurs.
 
-FileAccessMonitoringThread: Subclass of QThread responsible for monitoring file system events in a separate thread. It uses an instance of FileAccessHandler to handle the events.
+-FileAccessMonitoringThread: Subclass of QThread responsible for monitoring file system events in a separate thread. It uses an instance of FileAccessHandler to handle the events.
 
-NetworkAnomalyDetectionApp: Subclass of QMainWindow representing the main GUI application. It initializes the GUI components, sets up the layout, and starts the file access monitoring thread. It also handles updating logs and displaying file events in QTableWidgets.
+-NetworkAnomalyDetectionApp: Subclass of QMainWindow representing the main GUI application. It initializes the GUI components, sets up the layout, and starts the file access monitoring thread. It also handles updating logs and displaying file events in QTableWidgets.
 
 - Methods:
 initUI(): Initializes the main UI components including QTextEdit for logs and QTableWidgets for displaying file events.
