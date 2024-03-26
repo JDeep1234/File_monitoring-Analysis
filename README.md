@@ -1,4 +1,4 @@
-# Network Anomaly Detection Application for file monitoring
+# Anomaly Detection Application uisng file monitoring
 
 ## Overview
 
@@ -10,6 +10,14 @@ The Network Anomaly Detection Application is a simple Python application that pr
 - Displays real-time information in tables for deleted, modified, and threat files.
 - Dark color palette for a cyber security theme.
 - Logs all file system events in a dedicated QTextEdit.
+- Tracking File Access: Whenever a file is created or modified within the monitored directory, the corresponding file path is recorded along with an increment to its access count in the 
+  self.file_access_counts dictionary.
+
+-Displaying Access Counts: The access counts are displayed in a table (self.access_counts_table) within the application's user interface. This table provides a visual representation of the access patterns for each file.
+
+-Anomaly Detection: While not explicitly implemented in this code, access counts can be used for anomaly detection. Unusual patterns, such as a sudden increase in access counts for a particular file or unexpected access to sensitive files, could indicate potential security incidents, unauthorized activity, or malware activity.
+
+-Monitoring Behavior Over Time: By continuously updating access counts over time, the application can track changes in file access patterns. This historical data can be analyzed to identify trends, patterns, or anomalies that may require further investigation.
 
 ## Getting Started
 
